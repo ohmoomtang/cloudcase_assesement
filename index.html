@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Employee Onboarding Form</title>
+  <link href="./css/index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="antialiased text-gray-900 px-6">
+            <div class="max-w-xl mx-auto py-12 divide-y md:max-w-4xl">
+                <form>
+                <div class="py-12">
+                <h2 class="text-2xl font-bold">Personal Information</h2>
+                <div class="mt-8 max-w-md">
+                    <div class="grid grid-cols-1 gap-6">
+                            <label class="block">
+                                <span class="text-gray-700">Full name</span>
+                                <input type="text" name="name" class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black" placeholder="Jammy Patderson"></input>
+                            </label>
+                            <label class="block">
+                                <span class="text-gray-700">Phone</span>
+                                <input type="tel" name="phone" class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black" placeholder="0444555666"></input>
+                            </label>
+                            <label class="block">
+                                <span class="text-gray-700">Email Address</span>
+                                <input type="email" name="email" class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black" placeholder="jammy@gmail.com"></input>
+                            </label>
+                            <label class="block">
+                                <span class="text-gray-700"> Address</span>
+                                <input type="text" name="address" class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black" placeholder="11 Pitt Street, Sydney, NSW, 2000"></input>
+                            </label>
+                            <label class="block">
+                                <span class="text-gray-700"> Employment Start Date</span>
+                                <input type="date" name="emp_start_date" class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"></input>
+                            </label>
+                    </div>
+                </div>
+
+                <div class="py-12">
+                    <h2 class="text-2xl font-bold">Working Eligibility</h2>
+                    <div class="mt-8 max-w-md">
+                        <div class="grid grid-cols-1 gap-6">
+                                <label class="block">
+                                    <span class="text-gray-700">Australian Tax File Number (TFN)</span>
+                                    <input type="number" name="tfn" class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black" placeholder="555 666 777"></input>
+                                </label>
+                                <label class="block">
+                                    <span class="text-gray-700">Are you an Australian Citizen or Permanent Resident?</a></span>
+                                    <div class="flex pt-2">
+                                    <div class="form-check form-check-inline pr-6">
+                                        <input type="radio" class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" name="citizen" id="citizen_Y" value="Y"></input>
+                                        <label class="form-check-label inline-block text-gray-800" for="citizen_Y">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" name="citizen" id="citizen_N" value="N"></input>
+                                        <label class="form-check-label inline-block text-gray-800" for="citizen_N">No</label>
+                                    </div>
+                                    </div>
+                                </label>
+                                <label class="block">
+                                    <span class="text-gray-700"> If not, please provide your visa detail, including subclass, type, start date, and end date</span>
+                                    <input type="text" name="address" class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black" placeholder="e.g. 500 Student Visa"></input>
+                                </label>
+                                <label class="block">
+                                    <div class="flex">
+                                    <span class="text-gray-700"> Start Date</span>
+                                    <input type="date" name="visa_start_date" class="mt-0 block w-full px-5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"></input>
+                                    <span class="text-gray-700"> End Date</span>
+                                    <input type="date" name="visa_end_date" class="mt-0 block w-full px-5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"></input>
+                                    </div>
+                                </label>
+                        </div>
+                    </div>
+
+                    <div class="py-12">
+                        <h2 class="text-2xl font-bold">Salary Payment</h2>
+                        <div class="mt-8 max-w-md">
+                            <div class="grid grid-cols-1 gap-6">
+                                    <label class="block">
+                                        <span class="text-gray-700">Please provide bank detail (BSB and Account Number)</span>
+                                        <div class="flex">
+                                        <input type="number" name="BSB" class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black" placeholder="BSB"></input>
+                                        <input type="number" name="BSB" class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black" placeholder="Account Number"></input>
+                                        </div>
+                                    </label>
+                                    <label class="block">
+                                        <span class="text-gray-700">Please specify type of employment</a></span>
+                                        <div class="flex pt-2">
+                                        <div class="form-check form-check-inline pr-6">
+                                            <input type="radio" class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" name="emp_type" id="emp_type_FT" value="FT"></input>
+                                            <label class="form-check-label inline-block text-gray-800" for="emp_type_FT">Full-time</label>
+                                        </div>
+                                        <div class="form-check form-check-inline pr-6">
+                                            <input type="radio" class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" name="emp_type" id="emp_type_PT" value="PT"></input>
+                                            <label class="form-check-label inline-block text-gray-800" for="emp_type_PT">Part-Time</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" name="emp_type" id="emp_type_CS" value="CS"></input>
+                                            <label class="form-check-label inline-block text-gray-800" for="emp_type_CS">Casual</label>
+                                        </div>
+                                        </div>
+                                    </label>
+                                    <label class="block">
+                                        <span class="text-gray-700">Annual Base Salary</span>
+                                        <input type="number" name="salary" class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black" placeholder="$65,000"></input>
+                                    </label>
+                                    <label class="block">
+                                        <span class="text-gray-700">If you want to sacrifice your salary for on top on your superannutaion, please specify amount per month</span>
+                                        <input type="number" name="sac_salary" class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black" placeholder="$500"></input>
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="flex pt-6">
+                            <div class="flex pr-6">
+                                <button type="submit" name="submit" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Submit</button>
+                            </div>
+                            <div class="flex pr-6">
+                                <button type="reset" name="reset" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Reset</button>
+                            </div>
+                        </div>
+            </div>
+        </form>
+        <div name="result" class="py-12" style="display:none">
+            <h2 class="text-2xl font-bold">Thanks for supply information, we hope you enjoy working here!</h2>
+            <a id="calc_result"></a>
+            <div class="mt-8 max-w-md">
+                <div class="grid grid-cols-1 gap-6">
+                    <p>Annual tax will be <strong name="result_tax"></strong> AUD</p>
+                    <p>Annual superannutaion contribution will be <strong name="result_super"></strong> AUD</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/index.js" type="module"></script>
+</html>
